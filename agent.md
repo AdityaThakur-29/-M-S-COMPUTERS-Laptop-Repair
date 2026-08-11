@@ -48,7 +48,7 @@ c:/Users/adity/OneDrive/Desktop/projects/
   4. **Services Grid (`.services`)**: 19 service cards highlighting Laptop Repair, Screen Replacement, Motherboard Repair, SSD Upgrade, Data Recovery, Virus Removal, AMC, etc.
   5. **Why Us Section (`.why`)**: Google rating badge (5.0★ / 307+ reviews), benefit statistics, customer trust points.
   6. **Process Section (`.process`)**: 4-step repair workflow: `01 DIAGNOSE` → `02 EXPLAIN` → `03 REPAIR` → `04 DELIVER`.
-  7. **Featured Hardware Breakdown (`.featured`)**: Interactive SVG cutaway diagram illustrating laptop hardware components (Screen, Keyboard, SSD, RAM, Motherboard, Battery) with leader line callouts.
+  7. **Featured Hardware Breakdown (`.featured`)**: Vector hardware diagram (`viewBox 0 0 1100 580`) detailing authentic laptop component architecture (15.6" IPS Display Screen, Keyboard Deck, Motherboard & Copper Heatpipe Fan Cooling, SODIMM DDR RAM, M.2 NVMe SSD, and Lithium-Ion Battery Pack) with zero-collision dashed leader lines and containerized callout badges.
   8. **Google Reviews (`.reviews`)**: Real client testimonials with Google rating summary badge and direct Google Maps review link.
   9. **Contact Section (`.contact`)**: Address details, business hours, quick call/WhatsApp buttons, and embedded responsive Google Maps iframe.
   10. **Floating Mobile Bar (`.float-actions`)**: Sticky bottom Call & WhatsApp quick action buttons for mobile visitors.

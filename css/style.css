@@ -413,10 +413,15 @@ h1, h2, h3 { font-family: var(--font-display); line-height: 1.1; text-transform:
 /* ---------- Reviews ---------- */
 .reviews .section-tag { box-shadow: 4px 4px 0 var(--black); }
 
-.rating-summary {
+a.rating-summary, .rating-summary {
   display: flex; align-items: center; justify-content: center; gap: 18px; flex-wrap: wrap;
   background: var(--white); border: var(--border); box-shadow: var(--shadow-lg);
-  padding: 26px 34px; margin-bottom: 48px; text-align: center;
+  padding: 26px 34px; margin-bottom: 48px; text-align: center; color: var(--black);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+a.rating-summary:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 16px 16px 0 var(--black);
 }
 .g-badge {
   display: grid; place-items: center; width: 62px; height: 62px;
@@ -453,7 +458,11 @@ h1, h2, h3 { font-family: var(--font-display); line-height: 1.1; text-transform:
 .review-meta h3 { font-size: 15px; }
 .review-stars { color: #F5A623; font-size: 16px; letter-spacing: 2px; }
 .review-card p { font-size: 15px; font-style: italic; }
-.review-google { margin-top: auto; font-size: 12px; font-weight: 700; color: #555; letter-spacing: 0.06em; text-transform: uppercase; }
+a.review-google, .review-google {
+  margin-top: auto; font-size: 12px; font-weight: 700; color: var(--blue);
+  letter-spacing: 0.06em; text-transform: uppercase; transition: color 0.15s ease, text-decoration 0.15s ease;
+}
+a.review-google:hover { color: var(--black); text-decoration: underline; text-underline-offset: 3px; }
 
 .review-cta { text-align: center; margin-top: 48px; }
 
@@ -519,9 +528,14 @@ a.contact-icon:hover { transform: rotate(-8deg); }
 .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.2fr; gap: 40px; padding-block: 64px 40px; }
 .logo-footer .logo-mark { color: var(--black); }
 .footer-brand p { margin: 18px 0 12px; max-width: 300px; color: rgba(255, 255, 255, 0.75); }
-.footer-rating {
+a.footer-rating, .footer-rating {
   display: inline-block; background: var(--yellow); color: var(--black);
   border: 3px solid var(--black); font-weight: 700; padding: 6px 12px; font-size: 13px;
+  box-shadow: var(--shadow-sm); transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+a.footer-rating:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--white);
 }
 .footer-col h3 { font-size: 14px; letter-spacing: 0.1em; margin-bottom: 18px; color: var(--yellow); }
 .footer-col ul { display: flex; flex-direction: column; gap: 10px; }
